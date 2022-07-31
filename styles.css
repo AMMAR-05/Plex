@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 2rem;
+  border-radius: 5rem;
+  background: rgba(255, 196, 0, 0.808);
+  font-size: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 9%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 1rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 3rem;
+  color: rgba(255, 196, 0, 0.808);
+}
+
+header .navbar a {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  color: rgba(172, 143, 14, 0.979);
+}
+
+header .navbar a:hover {
+  color: yellowgreen;
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.627), rgba(0, 0, 0, 0.6)),
+    url("https://www.plex.tv/wp-content/uploads/2020/07/hero-live-tv-homepage-1024x576.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55rem;
+  width: 95%;
+  position: relative;
+  top: 0;
+  left: 2.5%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title-button {
+  color: #fff;
+  text-align: center;
+}
+.title-button h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.title-button h1 span {
+  display: block;
+}
+.title-button button {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2.3rem;
+  background-color: #e5a00d;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.title-button button:hover {
+  background-color: #c78c0d;
+}
+
+.features {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+}
+
+.feature {
+  background-color: rgba(44, 41, 41, 0.678);
+  padding: 1rem;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.feature-1,
+.feature-2,
+.feature-3 {
+  margin-right: 0.5rem;
+}
+
+.icon {
+  font-size: 4rem;
+}
+
+.feature > h2 {
+  color: whitesmoke;
+  margin-bottom: 0.5rem;
+}
+
+.feature > p {
+  color: rgb(189, 183, 183);
+  margin-bottom: 2rem;
+}
+
+.btn-feature {
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 9rem;
+  height: 2.3rem;
+  border: 2px solid rgb(199, 170, 7);
+  border-radius: 90rem;
+}
+
+.btn-feature > a {
+  color: rgb(138, 119, 14);
+}
+
+.feature:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.feature:hover .feature__text {
+  color: black;
+}
